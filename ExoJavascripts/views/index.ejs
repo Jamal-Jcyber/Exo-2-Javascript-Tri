@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form D'ajout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <div class="alert alert-success" role="alert"> A simple success alert—check it out! </div>
+                <div class="alert alert-danger" role="alert"> A simple warning alert—check it out! </div>
+            
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 style="text-align: center;"> <%= title %> </h1>
+
+                    <form action="/" method="POST">
+                        <div class="form-group">
+                          <label for="firstname">FirstName</label>
+                          <input type="text" class="form-control" id="firstname" name="firstname">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="lastname">LastName</label>
+                          <input type="text" class="form-control" id="lastname" name="lastname">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" class="form-control" id="age" name="age">
+                          </div>
+  
+                          <div class="form-group">
+                            <label for="profession">Profession</label>
+                            <input type="text" class="form-control" id="profession" name="profession">
+                          </div>
+
+                        <button type="submit" class="btn btn-primary">Add  + </button>
+                      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <table class="table">
+                        <thead>
+                            <th>Id</th>
+                            <th>FirstName</th>
+                            <th>LastName</th>
+                            <th>Age</th>
+                            <th>Profession</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <%=   %> </td>
+                                <td> <%=   %> </td>
+                                <td> <%=   %> </td>
+                                <td> <%=   %> </td>
+                                <td> <%=   %> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
