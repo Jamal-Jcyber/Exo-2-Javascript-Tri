@@ -11,22 +11,10 @@
     <div class="container">
         <div class="row">
             <div class="col">
-
-                <div class="alert alert-success" role="alert"> A simple success alert—check it out! </div>
-                <div class="alert alert-danger" role="alert"> A simple warning alert—check it out! </div>
-            
-            </div>
-        </div>
-    </div>
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col">
                 <div class="jumbotron">
-                    <h1 style="text-align: center;"> <%= title %> </h1>
+                    <h1 style="text-align: center;"> Add New User :)</h1>
 
-                    <form action="/" method="POST">
+                    <form action="/add" method="POST">
                         <div class="form-group">
                           <label for="firstname">FirstName</label>
                           <input type="text" class="form-control" id="firstname" name="firstname">
@@ -55,33 +43,31 @@
         </div>
     </div>
 
-
     <div class="container">
         <div class="row">
+            <!--  -->
             <div class="col">
-                <div class="jumbotron">
-                    <table class="table">
-                        <thead>
-                            <th>Id</th>
-                            <th>FirstName</th>
-                            <th>LastName</th>
-                            <th>Age</th>
-                            <th>Profession</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td> <%=   %> </td>
-                                <td> <%=   %> </td>
-                                <td> <%=   %> </td>
-                                <td> <%=   %> </td>
-                                <td> <%=   %> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <form action="/all" method="get">
+                    <button class="btn btn-danger">Get Records</button>
+                </form>
             </div>
+            <!--  -->
+            <div class="col">
+                <form action="/all/age" method="get">
+                    <button class="btn btn-danger">Get using Age</button>
+                </form>
+                
+            </div>
+            <!--  -->
+            <div class="col">
+                <form action="/all/alpha" method="get">
+                    <button class="btn btn-danger">Get using Alphabete</button>
+                </form>
+            </div>
+            <!--  -->
         </div>
     </div>
+
 
 
 
